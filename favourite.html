@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta characterset="UTF-8">
+	<title>
+		NINJAS STUDIOS
+	</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style>
+		#mydiv {
+			height: 100px;
+			width: 100%;
+			background-color: white;
+			position: fixed;
+			bottom: 100px;
+			left: 0;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<nav>
+
+		<div class="left">
+			<div class="logo">
+				<img src="images/musiclogonew.png">
+				<h4><span style="font-size: 18px;">Ninja<br>
+						<b>Studio</b></span></h4>
+			</div>
+			<div class="description">
+				<a>FAVOURITES</a>
+			</div>
+		</div>
+		<div class="right">
+			<div class="search-bar">
+				<i class="fas fa-search fa-1x"></i>
+				<input type="text" id="search" name="search" placeholder="Search....">
+				<i class="fas fa-microphone fa-1x"></i>
+			</div>
+			<div class="icons">
+				<i class="fas fa-bell fa-2x"></i>
+				<i class="fas fa-user-circle fa-3x"></i>
+			</div>
+		</div>
+	</nav>
+	<main>
+		<div class="favourite-card">
+			<img src="images/coldplay1.jpg">
+			<div class="fav-description">
+				<h3>ColdPlay</h3>
+				<p>BRITISH BAND <br><br> Coldplay are a British rock band that were formed in London in 1996. Vocalist and pianist Chris Martin, guitarist Jonny Buckland, bassist Guy Berryman, and drummer Will Champion met at University College London and began playing music together from 1996 to 1998. </p>
+				<input type="button" id="play-button" value="Play All" onclick="toggle_visibility('foo');">
+				<div id="foo">
+					<img src="images/charlie.jpg " title="mirage">
+					<h4><span style="font-size: 16px;"> <b>Mirage</b></span><br>
+						Else</h4>
+					<span style="margin-left: 30px; "> </span>
+					<audio controls>
+						<source id="audio-ctrl" src="Coldplay%20-%20The%20Scientist.mp3" type="audio/ogg">
+						Your browser does not support the audio element.
+					</audio>
+					<span style="margin-left: 30px; "> <i class="fas fa-bars"></i></span>
+					<span style="color: white;"> <i class="fas fa-volume-up"></i></span>
+					<span class="expand" style="color: white;"> <i class="fas fa-expand-alt"></i></span>
+
+				</div>
+				<p>247 tracks|128 albums </p>
+			</div>
+			<span id="followers">180</span>
+			<span id="followers">Followers</span>
+
+		</div>
+		<div class="favourite-songs">
+			<div>
+				<h4>01</h4>
+				<img src="images/charlie.jpg " title="mirage">
+				<h4><span style="font-size: 16px;"> <b>Mirage</b></span><br>
+					Else</h4>
+				<span style="float: right; margin-top: 30px; color: white; padding-right: 50px"> <i class="fas fa-plus"></i></span>
+				<span style="float: right; margin-top: 30px; color: white; padding-right: 50px;"> <i class="far fa-heart"></i></span>
+			</div>
+			<div>
+				<h4>01</h4>
+				<img src="images/charlie.jpg " title="mirage">
+				<h4><span style="font-size: 16px;"> <b>Mirage</b></span><br>
+					Else</h4>
+				<span style="float: right; margin-top: 30px; color: white; padding-right: 50px"> <i class="fas fa-plus"></i></span>
+				<span style="float: right; margin-top: 30px; color: white; padding-right: 50px;"> <i class="far fa-heart"></i></span>
+			</div>
+			<div>
+				<h4>01</h4>
+				<img src="images/charlie.jpg " title="mirage">
+				<h4><span style="font-size: 16px;"> <b>Mirage</b></span><br>
+					Else</h4>
+				<span style="float: right; margin-top: 30px; color: white; padding-right: 50px"> <i class="fas fa-plus"></i></span>
+				<span style="float: right; margin-top: 30px; color: white; padding-right: 50px;"> <i class="far fa-heart"></i></span>
+			</div>
+			<div>
+				<h4>01</h4>
+				<img src="images/charlie.jpg " title="mirage">
+				<h4><span style="font-size: 16px;"> <b>Mirage</b></span><br>
+					Else</h4>
+				<span style="float: right; margin-top: 30px; color: white; padding-right: 50px"> <i class="fas fa-plus"></i></span>
+				<span style="float: right; margin-top: 30px; color: white; padding-right: 50px;"> <i class="far fa-heart"></i></span>
+			</div>
+			<div>
+				<h4>01</h4>
+				<img src="images/charlie.jpg " title="mirage">
+				<h4><span style="font-size: 16px;"> <b>Mirage</b></span><br>
+					Else</h4>
+				<span style="float: right; margin-top: 30px; color: white; padding-right: 50px"> <i class="fas fa-plus"></i></span>
+				<span style="float: right; margin-top: 30px; color: white; padding-right: 50px;"> <i class="far fa-heart"></i></span>
+			</div>
+			<div>
+				<h4>01</h4>
+				<img src="images/charlie.jpg " title="mirage">
+				<h4><span style="font-size: 16px;"> <b>Mirage</b></span><br>
+					Else</h4>
+				<span style="float: right; margin-top: 30px; color: white; padding-right: 50px"> <i class="fas fa-plus"></i></span>
+				<span style="float: right; margin-top: 30px; color: white; padding-right: 50px;"> <i class="far fa-heart"></i></span>
+			</div>
+			<div>
+				<h4>01</h4>
+				<img src="images/charlie.jpg " title="mirage">
+				<h4><span style="font-size: 16px;"> <b>Mirage</b></span><br>
+					Else</h4>
+				<span style="float: right; margin-top: 30px; color: white; padding-right: 50px"> <i class="fas fa-plus"></i></span>
+				<span style="float: right; margin-top: 30px; color: white; padding-right: 50px;"> <i class="far fa-heart"></i></span>
+			</div>
+
+
+		</div>
+
+
+	</main>
+
+	<aside>
+		<div class="similar-artist">
+			<h5>View all</h5>
+			<p><span style="font-size: 20px; font-weight: bold; margin-left: 0px;">Similar Artists</span></p>
+			<div>
+				<img src="images/onism.jpg">
+				<a class="dropdown-menu-right" data-toggle="dropdown" id="dropdownMenuButton" aria-haspopup="false" aria-expanded="false">
+					<i class="fas fa-ellipsis-h"></i>
+				</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Play Now</a>
+					<a class="dropdown-item" href="#">Add to queue</a>
+					<a class="dropdown-item" href="#">Add to favourites</a>
+					<a class="dropdown-item" href="#">Get Info</a>
+				</div>
+				<h4 id="f-right">00:44</h4>
+				<h4><span style="font-size: 14px;"><b><br> Imagine Dragons</b></span><br>
+					August 11,2017</h4>
+			</div>
+			<div>
+				<img src="images/onism.jpg">
+				<a class="dropdown-menu-right" data-toggle="dropdown" id="dropdownMenuButton" aria-haspopup="false" aria-expanded="false">
+					<i class="fas fa-ellipsis-h"></i>
+				</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Play Now</a>
+					<a class="dropdown-item" href="#">Add to queue</a>
+					<a class="dropdown-item" href="#">Add to favourites</a>
+					<a class="dropdown-item" href="#">Get Info</a>
+				</div>
+				<h4 id="f-right">00:44</h4>
+				<h4><span style="font-size: 14px;"><b> <br>Imagine Dragons</b></span><br>
+					August 11,2017</h4>
+			</div>
+			<div>
+				<img src="images/onism.jpg">
+				<a class="dropdown-menu-right" data-toggle="dropdown" id="dropdownMenuButton" aria-haspopup="false" aria-expanded="false">
+					<i class="fas fa-ellipsis-h"></i>
+				</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Play Now</a>
+					<a class="dropdown-item" href="#">Add to queue</a>
+					<a class="dropdown-item" href="#">Add to favourites</a>
+					<a class="dropdown-item" href="#">Get Info</a>
+				</div>
+				<h4 id="f-right">00:44</h4>
+				<h4><span style="font-size: 14px;"><b> <br>Imagine Dragons</b></span><br>
+					August 11,2017</h4>
+			</div>
+		</div>
+		<div class="recently-played">
+			<h5>View all</h5>
+			<p><span style="font-size: 20px; font-weight: bold; margin-left: 0px;">Recently Played</span></p>
+			<div>
+				<h4>01</h4>
+				<img src="images/love.jpg" title="mirage">
+				<h4><span style="font-size: 16px;"> <b>Mirage</b></span><br>
+					Else</h4>
+				<span style="float: right; margin-top: 20px;"> <i class="far fa-heart"></i></span>
+			</div>
+			<div>
+				<h4>01</h4>
+				<img src="images/love.jpg" title="mirage">
+				<h4><span style="font-size: 16px;"> <b>Mirage</b></span><br>
+					Else</h4>
+				<span style="float: right; margin-top: 20px;"> <i class="far fa-heart"></i></span>
+			</div>
+			<div>
+				<h4>01</h4>
+				<img src="images/love.jpg" title="mirage">
+				<h4><span style="font-size: 16px;"> <b>Mirage</b></span><br>
+					Else</h4>
+				<span style="float: right; margin-top: 20px;"> <i class="far fa-heart"></i></span>
+			</div>
+			<div>
+				<h4>01</h4>
+				<img src="images/love.jpg" title="mirage">
+				<h4><span style="font-size: 16px;"> <b>Mirage</b></span><br>
+					Else</h4>
+				<span style="float: right; margin-top: 20px;"> <i class="far fa-heart"></i></span>
+			</div>
+			<div>
+				<h4>01</h4>
+				<img src="images/love.jpg" title="mirage">
+				<h4><span style="font-size: 16px;"> <b>Mirage</b></span><br>
+					Else</h4>
+				<span style="float: right; margin-top: 20px;"> <i class="far fa-heart"></i></span>
+			</div>
+			<div>
+				<h4>01</h4>
+				<img src="images/love.jpg" title="mirage">
+				<h4><span style="font-size: 16px;"> <b>Mirage</b></span><br>
+					Else</h4>
+				<span style="float: right; margin-top: 20px;"> <i class="far fa-heart"></i></span>
+			</div>
+			<div>
+				<h4>01</h4>
+				<img src="images/love.jpg" title="mirage">
+				<h4><span style="font-size: 16px;"> <b>Mirage</b></span><br>
+					Else</h4>
+				<span style="float: right; margin-top: 20px;"> <i class="far fa-heart"></i></span>
+			</div>
+			<div>
+				<h4>01</h4>
+				<img src="images/love.jpg" title="mirage">
+				<h4><span style="font-size: 16px;"> <b>Mirage</b></span><br>
+					Else</h4>
+				<span style="float: right; margin-top: 20px;"> <i class="far fa-heart"></i></span>
+			</div>
+
+
+		</div>
+
+
+
+	</aside>
+
+
+
+
+	<script type="text/javascript">
+		<!--
+		function toggle_visibility(id) {
+			var e = document.getElementById(id);
+			if (e.style.display == 'none')
+				e.style.display = 'block';
+			else
+				e.style.display = 'none';
+		}
+		//
+
+		-->
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>

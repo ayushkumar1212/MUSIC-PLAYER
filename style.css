@@ -1,0 +1,581 @@
+body {
+	background-color: #0C1027;
+}
+
+h3 {
+	color: white;
+	margin-top: 40px;
+	font-size: 20px;
+}
+
+h4 {
+	display: inline-block;
+	color: white;
+	font-size: 10px;
+	line-height: 20px;
+}
+
+#f-right {
+	float: right;
+	margin-top: 30px;
+	margin-right: -20px;
+}
+
+nav {
+	color: black;
+	height: 150px;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+.left {
+	display: flex;
+	float: left;
+	flex-wrap: nowrap;
+}
+
+.logo img {
+	width: 90px;
+	margin: 20px 5px 20px 50px;
+}
+
+.description {
+	margin-top: 40px;
+	margin-left: 100px;
+	color: white;
+	font-weight: bold;
+}
+
+.right {
+	display: flex;
+	float: right;
+	justify-content: space-between;
+}
+
+.search-bar {
+	border: 1px solid #12193E;
+	padding-top: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-radius: 25px;
+	margin-right: 20px;
+	margin-top: 20px;
+	background-color: #12193E;
+}
+
+#search {
+	border: none;
+}
+
+.search-bar i {
+	color: white;
+}
+
+.search-bar input {
+	background-color: #12193E;
+}
+
+.icons {
+	margin-top: 15px;
+	color: white;
+	margin-left: 20px;
+}
+
+.icons i {
+	margin-right: 50px;
+}
+
+main {
+	width: 70%;
+	padding-left: 6%;
+	display: inline-block;
+}
+
+.corousel {
+	display: flex;
+	height: 200px;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+
+}
+
+.corousel div {
+	width: 30%;
+	border: 1px solid white;
+	margin: 15px;
+	background-size: contain;
+	transition: all 0.5s ease-in-out;
+	min-width: 300px;
+
+}
+
+.corousel::-webkit-scrollbar {
+	width: 1em;
+}
+
+.corousel div img {
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed;
+}
+
+.corousel div:hover {
+	transform: scale(1.6);
+}
+
+.latest-release {
+	margin-top: 40px;
+	display: flex;
+	overflow-x: auto;
+	overflow-y: hidden;
+
+}
+
+.latest-release div {
+	width: 32%;
+	height: 100px;
+	min-width: 300px;
+	margin-left: 20px;
+}
+
+.latest-release::-webkit-scrollbar {
+	width: 1em;
+}
+
+.latest-release div img {
+	width: 40%;
+	height: 100%;
+}
+
+#dropdownMenuButton {
+	float: right;
+	color: white;
+	margin-right: 10px;
+}
+
+.dropdown-menu {
+	max-width: 100px;
+}
+
+.dropdown-item {
+	font-size: 10px;
+}
+
+.popular-artists {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	margin-bottom: 60px;
+	padding-bottom: 50px;
+
+}
+
+.popular-artists::-webkit-scrollbar {
+	width: 1em;
+}
+
+
+.popular-artists div {
+	width: 14%;
+	min-width: 120px;
+	background-size: contain;
+	margin: 10px;
+	height: 120px;
+	border-radius: 50%;
+	position: relative;
+}
+
+.popular-artists div img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	box-shadow: 1px 1px 10px 2px black;
+
+}
+
+.popular-artists p {
+	color: white;
+	text-align: center;
+	font-size: 14px;
+}
+
+.play-button {
+
+	position: absolute;
+	transition: all o.5s ease-in-out;
+	height: 100%;
+	margin-top: 50px;
+	margin-left: 55px;
+	color: transparent;
+}
+
+.popular-artists div:hover img {
+	opacity: 0.3;
+}
+
+.popular-artists div:hover .play-button {
+	color: white;
+	opacity: 1;
+}
+
+.stations {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	height: 180px;
+	background-color: #101642;
+	margin-bottom: 100px;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.stations::-webkit-scrollbar {
+	width: 1em;
+}
+
+.stations div {
+	width: 14%;
+	height: 120px;
+	margin-top: 30px;
+	margin-right: 10px;
+	margin-left: 15px;
+	min-width: 120px;
+}
+
+.station-image {
+	background-size: contain;
+}
+
+.station-image img {
+	width: 100%;
+	height: 100%;
+}
+
+.stations-cirle {
+	box-sizing: border-box;
+	background-size: contain;
+	background-position: center;
+	position: relative;
+}
+
+.stations-cirle img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.stations-cirle p {
+	color: white;
+	position: absolute;
+	font-weight: bold;
+	left: 35%;
+	top: 40%;
+}
+
+.filter {
+	filter: sepia(100%);
+}
+
+.opacity {
+	opacity: 40%;
+}
+
+.PER {
+	display: flex;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.PER div {
+	border: 1px solid white;
+	width: 34%;
+	min-width: 300px;
+	height: 150px;
+	justify-content: space-between;
+	margin-left: 10px;
+	overflow: hidden;
+}
+
+.PER::-webkit-scrollbar {
+	width: 1em;
+}
+
+.party {
+	position: relative;
+}
+
+.party img {
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s ease;
+	background-size: cover;
+}
+
+.party img:hover {
+	width: 320px;
+	height: 160px;
+	opacity: 40%;
+
+}
+
+.party p {
+	color: white;
+	position: absolute;
+	text-align: center;
+	padding-left: 100px;
+	padding-top: 60px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.latest-english {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	margin-bottom: 100px;
+	justify-content: space-between;
+}
+
+.latest-english div {
+	width: 15%;
+	height: 150px;
+	min-width: 120px;
+	margin-right: 5px;
+}
+
+.latest-english::-webkit-scrollbar {
+	width: 1em;
+}
+
+.latest-english img {
+	width: 100%;
+	height: 75%;
+}
+
+aside {
+
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+	height: 1600px;
+	margin-top: 1%;
+}
+
+aside div {
+	padding-left: 5%;
+	width: 100%;
+	height: 65px;
+	margin-top: 1%;
+	display: inline-block;
+	color: white;
+}
+
+aside img {
+	width: 15%;
+	height: 95%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+aside h3 {
+	margin-top: 0px;
+}
+
+
+aside #dropdownMenuButton {
+	margin-right: 0px;
+	float: right;
+}
+
+.favourite-card {
+	height: 400px;
+	background-size: cover;
+	background-color: #12193E;
+	display: flex;
+	min-width: 35%;
+	overflow-y: auto;
+
+}
+
+.favourite-card::-webkit-scrollbar {
+	width: 1em;
+}
+
+.favourite-card img {
+	width: 50%;
+	height: 100%;
+	filter: hue-rotate(70deg);
+
+}
+
+.fav-description {
+	margin-left: 5%;
+	color: white;
+	text-align: justify;
+
+}
+
+.fav-description p {
+	width: 100%;
+	opacity: 60%;
+	word-wrap: break-word;
+	font-size: 12px;
+	font-family: sans-serif;
+
+}
+
+.fav-description::-webkit-scrollbar {
+	width: 1em;
+}
+
+.favourite-card #followers {
+	color: white;
+	height: 10%;
+	margin-top: 4%;
+	margin-right: 15px;
+	opacity: 60%;
+	font-size: 12px;
+	font-family: sans-serif;
+}
+
+.fav-description button {
+
+	border: none;
+	color: white;
+	padding: 5px 30px;
+	margin-top: 30px;
+}
+
+.favourite-songs {
+	display: flex;
+	height: 800px;
+	flex-direction: column;
+	margin-top: 40px;
+}
+
+.favourite-songs div {
+	width: 100%;
+	height: 100px;
+	margin-top: 10px;
+	background-color: #1A1E33;
+	padding-left: 20px;
+}
+
+.favourite-songs img {
+	height: 80%;
+	box-shadow: 1px 1px 8px 1px white;
+	margin: 10px 20px 10px 20px;
+
+}
+
+aside {}
+
+.similar-artist {
+	width: 100%;
+	height: 380px;
+	padding-right: 10px;
+}
+
+.similar-artist h5 {
+	float: right;
+	font-size: 12px;
+}
+
+.similar-artist div {
+	width: 100%;
+	height: 27%;
+}
+
+.similar-artist div img {
+	width: 30%;
+}
+
+.recently-played {
+	width: 100%;
+	height: 700px;
+	padding-right: 10px;
+	margin-top: 125px;
+}
+
+.recently-played h5 {
+	float: right;
+	font-size: 12px;
+}
+
+.recently-played div {
+	width: 100%;
+	height: 80px;
+}
+
+.recently-played img {
+	height: 80%;
+	width: 20%;
+}
+
+#foo {
+	width: 100%;
+	height: 100px;
+	background-color: #282828;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: none;
+
+}
+
+#play-button {
+	padding: 5px 35px 5px 35px;
+	background-image: linear-gradient(to right, blue, purple 90%);
+	border: none;
+}
+
+audio {
+	width: 500px;
+	margin-left: 300px;
+	padding-top: 30px;
+
+}
+
+#foo {
+	padding-left: 50px;
+}
+
+#foo img {
+	width: 5%;
+	height: 80%;
+}
+
+#foo h4 {
+	margin-top: 10px;
+}
+
+#foo .expand {
+	color: white;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+	aside {
+		display: block;
+		width: 80%;
+		;
+		margin-left: 10px;
+	}
+
+	main {
+		width: 95%;
+	}
+
+	.favourite-card {
+		height: 450px;
+	}
+
+}
